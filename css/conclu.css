@@ -12,7 +12,7 @@
 .constainer {
   text-align: center;
 }
-.header {
+.heade {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,7 +27,7 @@
   transform: translate(-50%, 15px);
 }
 
-.header span {
+.heade span {
   margin-right: 20px;
   font-size: 32px;
   font-family: "Poppins";
@@ -37,7 +37,7 @@
   font-style: normal;
 }
 
-.header p {
+.heade p {
   margin-top: 15px;
   margin-left: 15px;
   font-size: 25px;
@@ -62,7 +62,7 @@
   align-items: center;
   justify-content: center;
 }
-input[type="text"] {
+.last-part input[type="text"] {
   width: 300px;
   height: 45px;
   padding: 0 15px;
@@ -72,19 +72,18 @@ input[type="text"] {
   text-transform: uppercase;
   color: white;
 }
-input[type="text"]::placeholder {
+.last-part input[type="text"]::placeholder {
   color: white;
   padding: 0 20px;
 }
-input[type="text"]:focus {
+.last-part input[type="text"]:focus {
   outline: none;
 }
-button {
+.last-part button {
   margin-left: 25px;
   width: 160px;
   height: 50px;
   border-radius: 25px;
-
   background: linear-gradient(130deg, #4386f5 15%, #ea4334);
   outline: none;
   border: none;
