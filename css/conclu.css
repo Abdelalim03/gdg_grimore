@@ -63,7 +63,7 @@
   justify-content: center;
 }
 input[type="text"] {
-  width: 280px;
+  width: 300px;
   height: 45px;
   padding: 0 15px;
   background-color: transparent;
@@ -140,6 +140,6 @@ button {
   letter-spacing: 4%;
   font-style: normal;
 }
-img {
+.last img {
   margin-left: 10px;
 }
