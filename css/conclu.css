@@ -74,6 +74,7 @@ input[type="text"] {
 }
 input[type="text"]::placeholder {
   color: white;
+  padding: 0 20px;
 }
 input[type="text"]:focus {
   outline: none;
@@ -83,7 +84,7 @@ button {
   width: 160px;
   height: 50px;
   border-radius: 25px;
-  padding: 5px 15px;
+
   background: linear-gradient(130deg, #4386f5 15%, #ea4334);
   outline: none;
   border: none;
