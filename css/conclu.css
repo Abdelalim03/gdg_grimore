@@ -142,3 +142,82 @@
 .last img {
   margin-left: 10px;
 }
+/***************repensive *****************/
+
+@media only screen and (max-width: 600px) {
+  .last-part {
+    height: 650px;
+  }
+  .lign-vertical {
+    height: 80px;
+    margin-top: 0px;
+    position: absolute;
+    transform: translate(-50%, 0px);
+  }
+
+  .heade span {
+    margin-right: 15px;
+    font-size: 23px;
+  }
+
+  .heade p {
+    margin-top: 15px;
+    margin-left: 30px;
+    font-size: 23px;
+  }
+  .second p {
+    margin-top: 80px;
+    font-size: 22px;
+  }
+  .btn-container {
+    margin-top: 35px;
+  }
+  .last-part input[type="text"] {
+    width: 170px;
+    height: 40px;
+    margin-right: 10px;
+  }
+  .last-part input[type="text"]::placeholder {
+    padding: 0 7px;
+  }
+
+  .last-part button {
+    margin-left: 5px;
+    width: 110px;
+    height: 45px;
+    font-size: 16px;
+  }
+  .conctact-container {
+    margin-top: 60px;
+  }
+  .conctact-container p {
+    font-size: 25px;
+  }
+  .reseau-sociaux {
+    margin-top: 50px;
+  }
+  .reseau-sociaux span {
+    font-size: 19px;
+  }
+  .lign-verticl {
+    border-left: 2px solid white;
+    height: 25px;
+    margin: 0 8px;
+  }
+  .last {
+    margin-top: 60px;
+  }
+  #prgh1 {
+    margin-right: 10px;
+  }
+  #prgh2 {
+    margin-left: 10px;
+  }
+  #prgh1,
+  #prgh2 {
+    font-size: 17px;
+  }
+  .last img {
+    margin-left: 7px;
+  }
+}
