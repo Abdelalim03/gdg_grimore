@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GDG Grimore</title>
+	<link rel="icon" href="./images/gdgLogo.png" type="image/gif">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/base.css" />
     <!-- Font Awesome -->
@@ -19,15 +20,15 @@
 	<div class="header" >
 		<div class="container">
 				<div class="logo">
-					<a href="#"> 
+					<a href="index.html"> 
 						<img src="./images/gdgLogo.png" alt="gdgLogo">
 					</a>
-					GDG Grimore
+					Grimoire
 				</div>
 				<ul class="main-nav">
 					<li><a href="#home">Home</a></li>
 					<li class="mega">
-						<a href="#">Fields</a>
+						<a href="#courses">Fields</a>
 						<!-- Start Megamenu -->
 						<div class="mega-menu">
 							<div class="image">
@@ -35,37 +36,37 @@
 							</div>
 							<ul class="links">
 							  <li>
-								<a href="#"><i class="fas fa-brain fa-fw"></i> Artificial Intelligence</a>
+								<a href="./fields.html"><i class="fas fa-brain fa-fw"></i> Artificial Intelligence</a>
 							  </li>
 							  <li>
-								<a href="#"><i class="fas fa-user-secret"></i> Cybersecurity	</a>
+								<a href="./fields.html"><i class="fas fa-user-secret"></i> Cybersecurity	</a>
 							  </li>
 							  <li>
-								<a href="#"><i class="fas fa-chart-bar fa-fw"></i> Data Science</a>
+								<a href="./fields.html"><i class="fas fa-chart-bar fa-fw"></i> Data Science</a>
 							  </li>
 							  <li>
-								<a href="#"><i class="fas fa-pencil-ruler"></i>Design </a>
+								<a href="./fields.html"><i class="fas fa-pencil-ruler"></i>Design </a>
 							  </li>
 							  <li>
-								<a href="#"><i class="fas fa-code"></i> Programming and Data structures</a>
+								<a href="./fields.html"><i class="fas fa-code"></i> Programming and Data structures</a>
 							  </li>
 							</ul>
 							<ul class="links">
 							  <li>
-								<a href="#"><i class="fas fa-hand-holding-usd"></i>Marketing</a>
+								<a href="./fields.html"><i class="fas fa-hand-holding-usd"></i>Marketing</a>
 							  </li>
 							  <li>
-								<a href="#"><i class="fas fa-book-open"></i>Self Development </a>
+								<a href="./fields.html"><i class="fas fa-book-open"></i>Self Development </a>
 							  </li>
 							  <li>
-								<a href="#"><i class="fab fa-html5"></i>Web Development</a>
+								<a href="./fields.html"><i class="fab fa-html5"></i>Web Development</a>
 							  </li>
 							  <li>
-								<a href="#"><i class="fab fa-android"></i> Mobile Development</a>
+								<a href="./fields.html"><i class="fab fa-android"></i> Mobile Development</a>
 							  </li>
 							  
 							  <li>
-								<a href="#"><i class="fas fa-desktop"></i> Desktop and Game Development</a>
+								<a href="./fields.html"><i class="fas fa-desktop"></i> Desktop and Game Development</a>
 							  </li>
 							</ul>
 						  </div>
@@ -78,46 +79,51 @@
 		</div>
 	<!-- End Header -->
 	<!-- Start Landing Page -->
-	<div class="landing">
-		<div class="container">
-			<div class="text">
-				<h1>Learn cool things that matter</h1>
-				<p>GDG_Grimore shares with you the resources recommended 
-					from the club’s most experimented members so you can 
-					follow their path and learn how to gain knowledge</p>
-			</div>
-			<div class="image">
-				<img src="./images/learning.png" alt="learning">
-			</div>
+	<div class="landing-page" id="home">
+		<div class="cc">
+		  <img
+			id="img1"
+			src="./images/landing.png"
+			alt=""
+		  />
+		  <img id="img2" src="./images/learn_cool_things_that_matter.png" alt="" />
+  
+		  <p>
+			GDG_Grimore shares with you the <br class="br-res" />resources
+			<br class="br-web" />
+			recommended from the<br class="br-res" />
+			club’s most <br class="br-web" />
+			experimented members <br class="br-res" />
+			so you can follow <br class="br-web" />their path and
+			<br class="br-res" />learn how to gain knowledge
+		  </p>
 		</div>
-		<a class="go-down" href="#courses" >
-			<i class="fas fa-angle-double-down fa-2x"></i>
-		  </a>
-	</div>
+		<img id="img3" src="./images/shapes.png" alt="" />
+	  </div>
 	<!-- End Landing Page -->
 	<!-- Start Courses -->
 	<div class="courses" id="courses">
 		<h2 class="main-title">Fields</h2>
 		<div class="container">
 		  <div class="box">
-			<img src="images/AI.png" alt="" />
+			<img src="images/ai_fiel.png" alt="" />
 			<div class="content">
 			  <h2>Artificial Intelligence</h2>
 			  <p>Artificial intelligence (AI) is a wide-ranging branch of computer<br/> science...</p>
 			</div>
 			<div class="info">
-			  <a href="">Read More</a>
+				<a href="./fields.html">Read More</a>
 			  <i class="fas fa-long-arrow-alt-right"></i>
 			</div>
 		  </div>
 		  <div class="box">
-			<img src="images/CyberSecurity.jpg" alt="" />
+			<img src="images/cybersecurity.png" alt="" />
 			<div class="content">
 			  <h2>CyberSecurity</h2>
 			  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
 			</div>
 			<div class="info">
-			  <a href="">Read More</a>
+			  <a href="./fields.html">Read More</a>
 			  <i class="fas fa-long-arrow-alt-right"></i>
 			</div>
 		  </div>
@@ -128,7 +134,7 @@
 			  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
 			</div>
 			<div class="info">
-			  <a href="">Read More</a>
+				<a href="./fields.html">Read More</a>
 			  <i class="fas fa-long-arrow-alt-right"></i>
 			</div>
 		  </div>
@@ -139,7 +145,7 @@
 			  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
 			</div>
 			<div class="info">
-			  <a href="">Read More</a>
+				<a href="./fields.html">Read More</a>
 			  <i class="fas fa-long-arrow-alt-right"></i>
 			</div>
 		  </div>
@@ -150,7 +156,7 @@
 			  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
 			</div>
 			<div class="info">
-			  <a href="">Read More</a>
+				<a href="./fields.html">Read More</a>
 			  <i class="fas fa-long-arrow-alt-right"></i>
 			</div>
 		  </div>
@@ -161,7 +167,7 @@
 			  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
 			</div>
 			<div class="info">
-			  <a href="">Read More</a>
+				<a href="./fields.html">Read More</a>
 			  <i class="fas fa-long-arrow-alt-right"></i>
 			</div>
 		  </div>
@@ -173,18 +179,18 @@
 			  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
 			</div>
 			<div class="info">
-			  <a href="">Read More</a>
+				<a href="./fields.html">Read More</a>
 			  <i class="fas fa-long-arrow-alt-right"></i>
 			</div>
 		  </div>
 		  <div class="box">
-			<img src="images/mobile.jpeg" alt="" />
+			<img src="images/mobile_dev.png" alt="" />
 			<div class="content">
 			  <h2>Mobile Development</h2>
 			  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
 			</div>
 			<div class="info">
-			  <a href="">Read More</a>
+			  <a href="./fields.html">Read More</a>
 			  <i class="fas fa-long-arrow-alt-right"></i>
 			</div>
 		  </div>
@@ -195,7 +201,7 @@
 			  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
 			</div>
 			<div class="info">
-			  <a href="">Read More</a>
+			  <a href="./fields.html">Read More</a>
 			  <i class="fas fa-long-arrow-alt-right"></i>
 			</div>
 		  </div>
@@ -206,7 +212,7 @@
 			  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reprehenderit</p>
 			</div>
 			<div class="info">
-			  <a href="">Read More</a>
+			  <a href="./fields.html">Read More</a>
 			  <i class="fas fa-long-arrow-alt-right"></i>
 			</div>
 		  </div>
@@ -268,18 +274,20 @@
 					  <i class="fab fa-instagram"></i>
 					</a>
 				  </div>
-			  <img src="images/testimonial.png" alt="" />
+			  <img src="images/ilhem.png" alt="" />
 			</div>
 			<div class="info">
-			  <h3>Chaker Alhadhur</h3>
+			  <h3>Ilhem Bekkar</h3>
 			</div>
 		  </div>
 		  <div class="slider">
 			  <p class="description">
-				Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-				 Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet 
+				The course that I value the most is cs50 : Introduction to Computer Science from Harvard.
+				I found this course on edX and learned fundemental basics of computer science and programming : <br/>
+				&nbsp;&nbsp;&nbsp; How to think algorithmically and solve problems efficiently.
+				I highly suggest this course especially for beginners.
 			  </p>
-			  <h1 class="field">UI UX Designer at Frost Interactive</h1>
+			  <h1 class="field">Student at ESI, Data Scientist</h1>
 			  <svg width="93" height="72" viewBox="0 0 93 72" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path opacity="0.2" d="M30.3593 33.6706C33.9285 35.2235 36.7125 37.5529 38.7113 40.6588C40.7101 43.7647 41.7095 47.4353 41.7095 51.6706C41.7095 57.7412 39.7821 62.6824 35.9273 66.4941C32.0725 70.1647 27.147 72 21.1507 72C15.1543 72 10.1574 70.0941 6.15985 66.2823C2.30508 62.4706 0.377686 57.6 0.377686 51.6706C0.377686 48.8471 0.734609 46.0235 1.44846 43.2C2.16231 40.3765 3.73277 36.1412 6.15985 30.4941L18.5808 0H39.7821L30.3593 33.6706ZM80.8997 33.6706C84.469 35.2235 87.253 37.5529 89.2517 40.6588C91.2505 43.7647 92.2499 47.4353 92.2499 51.6706C92.2499 57.7412 90.3225 62.6824 86.4677 66.4941C82.613 70.1647 77.6874 72 71.6911 72C65.6948 72 60.6978 70.0941 56.7003 66.2823C52.8455 62.4706 50.9181 57.6 50.9181 51.6706C50.9181 48.8471 51.275 46.0235 51.9889 43.2C52.7027 40.3765 54.2732 36.1412 56.7003 30.4941L69.1212 0H90.3225L80.8997 33.6706Z" fill="#4285F4"/>
 				</svg>
@@ -304,18 +312,20 @@
 						<i class="fab fa-instagram"></i>
 					  </a>
 					</div>
-				<img src="images/testimonial.png" alt="" />
+				<img src="images/kamel.png" alt="" />
 			  </div>
 			  <div class="info">
-				<h3>Hichem Boulouza</h3>
+				<h3>Kamel Brouthen</h3>
 			  </div>
 			</div>
 			<div class="slider">
 				<p class="description">
-				  Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
-				   Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet 
+					The course that I value the most is cs50 : Introduction to Computer Science from Harvard.
+					I found this course on edX and learned fundemental basics of computer science and programming : <br/>
+					&nbsp;&nbsp;&nbsp; How to think algorithmically and solve problems efficiently.
+					I highly suggest this course especially for beginners.
 				</p>
-				<h1 class="field">Full stack developer at GDG_Grimore</h1>
+				<h1 class="field">Student at ESI, Graphic Designer</h1>
 				<svg width="93" height="72" viewBox="0 0 93 72" fill="none" xmlns="http://www.w3.org/2000/svg">
 				  <path opacity="0.2" d="M30.3593 33.6706C33.9285 35.2235 36.7125 37.5529 38.7113 40.6588C40.7101 43.7647 41.7095 47.4353 41.7095 51.6706C41.7095 57.7412 39.7821 62.6824 35.9273 66.4941C32.0725 70.1647 27.147 72 21.1507 72C15.1543 72 10.1574 70.0941 6.15985 66.2823C2.30508 62.4706 0.377686 57.6 0.377686 51.6706C0.377686 48.8471 0.734609 46.0235 1.44846 43.2C2.16231 40.3765 3.73277 36.1412 6.15985 30.4941L18.5808 0H39.7821L30.3593 33.6706ZM80.8997 33.6706C84.469 35.2235 87.253 37.5529 89.2517 40.6588C91.2505 43.7647 92.2499 47.4353 92.2499 51.6706C92.2499 57.7412 90.3225 62.6824 86.4677 66.4941C82.613 70.1647 77.6874 72 71.6911 72C65.6948 72 60.6978 70.0941 56.7003 66.2823C52.8455 62.4706 50.9181 57.6 50.9181 51.6706C50.9181 48.8471 51.275 46.0235 51.9889 43.2C52.7027 40.3765 54.2732 36.1412 56.7003 30.4941L69.1212 0H90.3225L80.8997 33.6706Z" fill="#4285F4"/>
 				  </svg>

@@ -158,12 +158,14 @@ a{
 .header .container > div.logo {
 	display: flex;
     align-items: center;
-	justify-content: center;
+	justify-content: space-between;
     font-size: large;
     font-weight: 600;
+	font-size: 30px;
     cursor: pointer;
     user-select: none;
 	height: 70px;
+	color: rgb(190, 190, 190);
 }
 @media (max-width:768px){
 	.header .container > div.logo {
@@ -302,94 +304,82 @@ a{
 
 
 /* Start landing page  */
-.landing{
+.landing-page{
 	padding-top: 72px;
-	position: relative;
 }
-.landing::before{
-	content: "";
-    position: absolute;
-    left: 0px;
-    top: -20px;
-    height: 100%;
-    width: 100%;
-    background-color: #ececec;
-    transform: skewY(-6deg);
-    z-index: -1;
-    transform-origin: left top;
-}
-.landing .container {
-	min-height: calc(100vh - 72px);
-	display:  flex;
-	align-items: center;
-	padding-bottom: 120px;
-	z-index: 99999;
-}
-
-.landing .container .text{
-	flex: 1;
-	z-index: 0;
-}
-@media (max-width: 991px) {
-	.landing .text {
+.landing-page #img1 {
+	float: right;
+	margin-top: 100px;
+	margin-right: 100px;
+	width: 500px;
+	height: 410px;
+  }
+  
+  .landing-page #img2 {
+	float: left;
+	margin-top: 100px;
+	margin-left: 100px;
+	width: 580px;
+	height: 230px;
+  }
+  .landing-page p {
+	float: left;
+	color: #343434;
+	margin-left: 100px;
+	margin-top: 80px;
+	font-size: 28px;
+	font-family: "Poppins";
+	line-height: 1.5;
+	font-weight: 400;
+  }
+  #img3 {
+	margin-top: 80px;
+	width: 100%;
+	height: 200px;
+  }
+  .br-res {
+	display: none;
+  }
+  @media only screen and (max-width: 600px) {
+	.landing-page #img1 {
+	  float: none;
+	  margin-top: 100px;
+	  margin-right: 0px;
+	  width: 280px;
+	  height: 270px;
+	}
+  
+	.landing-page #img2 {
+	  float: none;
+	  margin-top: 50px;
+	  margin-right: auto;
+	  margin-left: auto;
+	  width: 270px;
+	  height: 180px;
+	}
+  
+	.landing-page p {
+	  float: none;
+	  text-align: center;
+	  margin-left: 0px;
+	  margin-top: 50px;
+	  font-size: 20px;
+	}
+  
+	#img3 {
+	  margin-top: 20px;
+	  width: 100%;
+	  height: 150px;
+	}
+	.cc {
 	  text-align: center;
 	}
-	.landing {
-		padding-top: 142px;
-	}
-  }
-.landing .container .text h1{
-	color: var(--main-color);
-	margin: 0;
-	font-size: 40px;
-    letter-spacing: -1px;
-}
-@media (max-width: 767px) {
-	.landing .text h1 {
-	  font-size: 28px;
-	}
-  }
-.landing  .text p{
-	color: #666;
-	font-size: 23px;
-	line-height: 1.7;
-	max-width: 500px;
-	margin: 5px 0 0;
-}
-@media (max-width: 991px) {
-	.landing .text p {
-	  margin: 10px auto;
-	}
-  }
-  @media (max-width: 767px) {
-	.landing .text p {
-	  font-size: 18px;
-	}
-  }
-.landing .image img {
-	position: relative;
-	width: 600px;
-	animation: up-and-down 5s linear infinite;
-  }
-  @media (max-width: 991px) {
-	.landing .image {
+	.br-web {
 	  display: none;
 	}
-  }
-
-  .landing .go-down {
-	color: var(--main-color);
-	position: absolute;
-	bottom: 30px;
-	left: 50%;
-	transform: translateX(-50%);
-	transition: var(--main-transition);
-  }
-  .landing .go-down:hover {
-	color: var(--main-color-alt);
-  }
-  .landing .go-down i {
-	animation: bouncing 1.5s infinite;
+	.br-res {
+	  display: inline;
+	}
   }
 /* End landing page */
 
@@ -418,7 +408,7 @@ a{
   .courses .box img {
 	width: 100%;
 	max-width: 100%;
-	height: 250px;
+	height: 230px;
 
   }
   .courses .box .content {
@@ -518,13 +508,13 @@ a{
   }
   @media  (max-width:768px) {
 	.testimonials  {
-		padding-bottom:1100px;
+		padding-bottom:950px;
 		
 	}
   }
   @media  (max-width:426px) {
 	.testimonials  {
-		padding-bottom:1260px;
+		padding-bottom:1030px;
 		
 	}
   }
@@ -561,7 +551,7 @@ a{
   	@media  (max-width:768px) {
 		.testimonials .box {
 			margin: auto;
-			margin-bottom: 60px;
+			margin-bottom: 45px;
 			
 		}
 	  }
@@ -599,6 +589,7 @@ a{
     width: calc(100% - 60px);
     transition: var(--main-transition);
     border-radius: 10px;
+	border-radius: 20px 75px 20px 75px;
   }
   .testimonials .box:hover img {
     filter: grayscale(100%);
@@ -661,6 +652,15 @@ a{
 		line-height: 1.6;
 		color: #343434;
 	}
+	@media  (max-width:768px) {
+		.testimonials .slider .field  {
+			font-size: 18px;
+			
+		}
+		.testimonials .slider .description  {
+			font-size: 16px;
+		}
+	  }
 	.testimonials .slider svg {
 		position: absolute;
 		bottom: 10px;

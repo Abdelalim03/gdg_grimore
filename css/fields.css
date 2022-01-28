@@ -167,6 +167,9 @@ a{
       .select-selected:after {
         top: 23px;
     }
+    .select-items div, .same-as-selected,.select-selected {
+      font-size: 13px;
+    }
 }
 @media (max-width: 425px) {
 	.custom-select,.select-items div,.select-selected ,.select-items{
@@ -297,9 +300,14 @@ a{
 /* End types */
 
 /* Start article */
+.principal{
+  padding-top:20px;
+  padding-bottom:60px ;
+  display: none;
+}
+
 .article {
-  padding-top:40px ;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
 }
 .article .container{
 
@@ -327,111 +335,8 @@ a{
 }
 /* End article */
 
-/* Start Courses */
-/* .courses{
-  padding-bottom: 40px;
-}
-.courses .card-content {
-  height: 620px;
-  width: 400px;
-  padding: 0 20px 0px 20px;
-  margin-top: 100px;
-  border: 2px solid white;
-}
-.courses .card-content span {
-  font-family: "Poppins";
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-}
-.courses .timing,
-.courses .being,
-.courses .spns {
-  display: flex;
-  margin-top: 15px;
-  margin-bottom: 10px;
-}
-.courses .static {
-  display: flex;
-}
-.courses .being {
-  margin-left: 140px;
-}
-
-.courses .timing span {
-  margin-left: 5px;
-}
-.courses .being span {
-  margin-left: 5px;
-}
-.courses #sp1 {
-  margin-top: 10px;
-}
-.courses #sp2 {
-  margin-top: 10px;
-  margin-left: 120px;
-}
-.courses hr {
-  margin-top: 15px;
-}
-.courses .fin-card a {
-  color: #45c9c2;
-  margin-left: 350px;
-  position: absolute;
-  transform: translateY(-30px);
-}
-
-.courses .fin-card p {
-  flex-wrap: wrap;
-  margin-top: 25px;
-  padding: 0 10px;
-  font-family: "Poppins";
-  font-size: 20px;
-  line-height: 1.5;
-}
-
-@media only screen and (max-width: 600px) {
-
-  .courses .card-content {
-    height: 480px;
-    width: 250px;
-    margin-top: 50px;
-  }
-  .courses .card-content span {
-    font-size: 13px;
-  }
-  .courses #img {
-    width: 90%;
-  }
-  .courses .being {
-    margin-left: 15px;
-  }
-
-  .courses .timing {
-    margin-left: 15px;
-  }
-
-  .courses #sp1 {
-    margin-left: 5px;
-  }
-  .courses #sp2 {
-    margin-left: 30px;
-  }
-  .courses .static {
-    display: flex;
-  }
-  .courses .fin-card a {
-    margin-left: 230px;
-    transform: translateY(-20px);
-  }
-
-  .courses .fin-card p {
-    font-size: 13px;
-  }
-} */
-
+/* Start courses */
 .courses {
-  padding-bottom: 40px;
 }
 .courses .card-content {
   height: 620px;
@@ -457,14 +362,14 @@ a{
   display: flex;
 }
 .courses .being {
-  margin-left: 80px;
+  margin-left: 60px;
 }
 
-.courses .timing span {
-  margin-left: 5px;
+.courses .timing p {
+  margin-left: 7px;
 }
-.courses .being span {
-  margin-left: 5px;
+.courses .being p {
+  margin-left: 7px;
 }
 .courses #sp1 {
   margin-top: 10px;
@@ -491,7 +396,11 @@ a{
   font-size: 20px;
   line-height: 1.5;
 }
-
+.being img,
+.timing img {
+  width: 30px;
+  height: 30px;
+}
 @media only screen and (max-width: 600px) {
   .courses .card-content {
     height: 480px;
@@ -499,7 +408,7 @@ a{
     margin-top: 50px;
     padding: 0;
   }
-  .courses .card-content span {
+  .courses .card-content p {
     font-size: 13px;
     text-align: center;
   }
@@ -510,12 +419,12 @@ a{
     margin-left: 40px;
     font-size: 15px;
   }
-.courses .being img{
- height: 20px;
-}
-.courses .timing img{
-  height: 25px;
-}
+  .courses .being img {
+    height: 20px;
+  }
+  .courses .timing img {
+    height: 25px;
+  }
   .courses .timing {
     margin-left: 10px;
     font-size: 15px;
@@ -538,16 +447,14 @@ a{
   .courses .fin-card p {
     font-size: 13px;
   }
-  
 }
-
 
 /* End Courses */
 
 /* Start Workshops */
 .workshops {
 	position: relative;
-  padding-top: 40px;
+  display: none;
   }
   .workshops .container {
 	display: grid;
@@ -598,3 +505,103 @@ a{
     padding: 10px 20px;
     }
 /* End Workshops */
+
+/* Start Books */
+.books {
+	position: relative;
+  
+  display: none;
+  }
+  .books .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	gap: 40px;
+  }
+  .books .box {
+    background-color: white;
+    overflow: hidden;
+    }
+  .books .box:first-child {
+    position: relative;
+    background-color: #F2F2F2;
+    overflow: hidden;
+    min-height:540px ;
+  }
+  .books .box .content {
+    padding:20px 0;
+    }
+    .workshops .box .content h2 {
+      margin: 0;
+      font-size: 18px;
+      line-height: 125%;
+      color: #14142B;
+      }
+      .workshops .box .content h3 {
+        font-size: 18px;
+        line-height: 125%;
+        color: #14142B;
+        }
+  .books .box:first-child .content {
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 1.2;
+    margin-left: 20px;
+    }
+    .books .box .info {
+      padding: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      }
+      .books .box .info a {
+      color: var(--main-color);
+      font-weight: bold;
+      background-color: forestgreen;
+      color: white;
+      border-radius: 4px;
+      padding: 10px 20px;
+      }
+      .books .box:first-child svg.union3 {
+        position: absolute;
+        bottom:20px ;
+        right:32px ;
+        }
+      .books .box:first-child svg.union2 {
+          position: absolute;
+          bottom:10px  ;
+          left:10px  ;
+        }
+      .books .box:first-child svg.union1 {
+            position: absolute;
+            bottom:5px  ;
+            left:-5px  ;
+        }
+      .books .box:first-child svg.vector6 {
+              position: absolute;
+              bottom: 190px;
+              right:30px ;
+              width: 118.58px;
+              height: 160.85px;
+              z-index: 1;
+        }
+      .books .box:first-child svg.vector22 {
+                position: absolute;
+                bottom: 190px;
+                right:20px ;
+                width: 118.58px;
+                height: 160.85px;
+       }
+       .books .box:first-child svg.rectangle36 {
+        position: absolute;
+        height: 119.45px;
+        bottom:200px ;
+        left:120px ;
+      } 
+      .books .box:first-child svg.eclipse2100 {
+        position: absolute;
+        height: 119.45px;
+        bottom:190px ;
+        left:95px ;
+        bottom: 135px;
+      } 
+/* End Books */

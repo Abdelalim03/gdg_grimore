@@ -1,5 +1,7 @@
 var x, i, j, l, ll, selElmnt, a, b, c;
 var tab = [];
+let selectField = document.getElementById("set-field")
+let selectLevel = document.getElementById("set-level")
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
 l = x.length;
@@ -46,6 +48,12 @@ for (i = 0; i < l; i++) {
         h = this.parentNode.previousSibling;
         for (i = 0; i < sl; i++) {
           if (s.options[i].innerHTML == this.innerHTML) {
+            console.log(s.options[i].value);
+            selectedOptions = s.options[i].value;
+            s.options[i].selected = 'selected'
+            if (s == selectField)
+            manageFields(s);
+            else if (s == selectLevel) manageLevel(s);
             s.selectedIndex = i;
             h.innerHTML = this.innerHTML;
             y = this.parentNode.getElementsByClassName("same-as-selected");
@@ -95,3 +103,53 @@ function closeAllSelect(elmnt) {
 /*if the user clicks anywhere outside the select box,
 then close all select boxes:*/
 document.addEventListener("click", closeAllSelect);
+
+
+// Start filtering
+
+let types = document.querySelectorAll(".types span");
+let field = document.querySelectorAll(".principal");
+let content = document.querySelectorAll(".principal > div");
+let crs = document.querySelectorAll(".principal .courses .card-content");
+types.forEach(type=>{
+	type.addEventListener("click",toggleActive);
+	type.addEventListener("click",manageContent);
+});
+
+function toggleActive(){
+	types.forEach(span=>{
+		span.classList.remove("active");
+	});
+	this.classList.add("active");
+}
+
+function manageContent(){
+  let i=0;
+	content.forEach(div=>{
+		if (i%4!==0)div.style.display="none";
+    i++;
+	});
+  // document.querySelector(this.dataset.cont).style.display="block";
+  let blocks = document.querySelectorAll(this.dataset.cont);
+  console.log(blocks);
+	blocks.forEach(block => {
+    block.style.display = "block"
+  });
+}
+
+
+function manageFields(s) {
+  field.forEach(div=>{
+		div.style.display="none";
+	});
+  if (document.querySelector("."+s.selectedOptions[0].value))
+  document.querySelector("."+s.selectedOptions[0].value).style.display = "block"
+}
+
+function manageLevel(s) {
+  crs.forEach(div=>{
+		div.style.display="none";
+	});
+  if (document.querySelector("."+s.selectedOptions[0].value))
+  document.querySelector("."+s.selectedOptions[0].value).style.display = "block"
+}
