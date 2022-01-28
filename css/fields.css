@@ -308,17 +308,27 @@ a{
     margin-top: 40px;
     font-weight: 700;
     font-size: 30px;
-    line-height: 48px;
+    line-height: 1.6;
 }
 .article p.description{
-    font-weight: 300;
+    font-weight: 400;
     font-size: 24px;
-    line-height: 38px;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+  .article h1.title{
+    font-size: 18px;
+    line-height: 1.8;
+}
+.article p.description{
+    font-size: 16px;
+    line-height: 1.8;
+}
 }
 /* End article */
 
 /* Start Courses */
-.courses{
+/* .courses{
   padding-bottom: 40px;
 }
 .courses .card-content {
@@ -418,6 +428,173 @@ a{
   .courses .fin-card p {
     font-size: 13px;
   }
+} */
+
+.courses {
+  padding-bottom: 40px;
+}
+.courses .card-content {
+  height: 620px;
+  width: 400px;
+  padding: 0 20px 0px 20px;
+  margin-top: 100px;
+  border: 2px solid white;
+}
+.courses .card-content span {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.courses .timing,
+.courses .being,
+.courses .spns {
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+.courses .static {
+  display: flex;
+}
+.courses .being {
+  margin-left: 80px;
 }
 
+.courses .timing span {
+  margin-left: 5px;
+}
+.courses .being span {
+  margin-left: 5px;
+}
+.courses #sp1 {
+  margin-top: 10px;
+}
+.courses #sp2 {
+  margin-top: 10px;
+  margin-left: 80px;
+}
+.courses hr {
+  margin-top: 15px;
+}
+.courses .fin-card a {
+  color: #45c9c2;
+  margin-left: 310px;
+  position: absolute;
+  transform: translateY(0px);
+}
+
+.courses .fin-card p {
+  flex-wrap: wrap;
+  margin-top: 25px;
+  padding: 0 10px;
+  font-family: "Poppins";
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 600px) {
+  .courses .card-content {
+    height: 480px;
+    width: 250px;
+    margin-top: 50px;
+    padding: 0;
+  }
+  .courses .card-content span {
+    font-size: 13px;
+    text-align: center;
+  }
+  .courses #img {
+    width: 90%;
+  }
+  .courses .being {
+    margin-left: 40px;
+    font-size: 15px;
+  }
+.courses .being img{
+ height: 20px;
+}
+.courses .timing img{
+  height: 25px;
+}
+  .courses .timing {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+
+  .courses #sp1 {
+    margin-left: 5px;
+  }
+  .courses #sp2 {
+    margin-left: 40px;
+  }
+  .courses .static {
+    display: flex;
+  }
+  .courses .fin-card a {
+    margin-left: 180px;
+    transform: translateY(-10px);
+  }
+
+  .courses .fin-card p {
+    font-size: 13px;
+  }
+  
+}
+
+
 /* End Courses */
+
+/* Start Workshops */
+.workshops {
+	position: relative;
+  padding-top: 40px;
+  }
+  .workshops .container {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+	gap: 40px;
+  }
+  .workshops .box {
+	box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+	background-color: white;
+	border-radius: 6px;
+	overflow: hidden;
+	transition: transform var(--main-transition), box-shadow var(--main-transition);
+  }
+  /* .workshops .box:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  } */
+  .workshops .box img {
+    width: 100%;
+    max-width: 100%;
+    height: 250px;
+  
+    }
+    .workshops .box .content {
+    padding: 20px;
+    }
+    .workshops .box .content h2 {
+    margin: 0;
+    text-transform: uppercase;
+    }
+    .workshops .box .content p {
+    margin: 10px 0 0;
+    line-height: 1.5;
+    color: #777;
+    }
+    .workshops .box .info {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .workshops .box .info a {
+    color: var(--main-color);
+    font-weight: bold;
+    background-color: forestgreen;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    }
+/* End Workshops */

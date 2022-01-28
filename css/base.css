@@ -406,7 +406,6 @@ a{
   }
   .courses .box {
 	box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
-	background-color: white;
 	background-color: #F2F2F2;
 	border-radius: 6px;
 	overflow: hidden;
@@ -425,7 +424,7 @@ a{
   .courses .box .content {
 	padding: 20px;
   }
-  .courses .box .content h3 {
+  .courses .box .content h2 {
 	margin: 0;
   }
   .courses .box .content p {
@@ -517,7 +516,18 @@ a{
     position: relative;
 	height: 852px;
   }
-  
+  @media  (max-width:768px) {
+	.testimonials  {
+		padding-bottom:1100px;
+		
+	}
+  }
+  @media  (max-width:426px) {
+	.testimonials  {
+		padding-bottom:1260px;
+		
+	}
+  }
   .testimonials .container {
 	
 	/* display: none; */
@@ -539,6 +549,9 @@ a{
   .testimonials .container.active {
 	display: flex;
 	opacity: 1;
+  }
+  .testimonials .container:not(.active) {
+	z-index: -1;
   }
   .testimonials .box {
     position: relative;
@@ -638,7 +651,6 @@ a{
 	font-size: 24px;
 	line-height: 1.6;
 	/* or 38px */
-
 	/* letter-spacing: 0.01em; */
 	margin-bottom: 40px;
 	color: #343434;
@@ -705,6 +717,13 @@ a{
 	  @media only screen and (max-width: 500px){
 		.testimonials .slider svg {
 			display: none;
+		}
+		.testimonials  .suiv {
+			margin-left: 20px;
+		}
+		.testimonials  .prec {
+			margin-right: 20px;
+			left: 30%;
 		}
 	  }
 	 
