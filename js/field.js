@@ -2,6 +2,29 @@ var x, i, j, l, ll, selElmnt, a, b, c;
 var tab = [];
 let selectField = document.getElementById("set-field")
 let selectLevel = document.getElementById("set-level")
+let types = document.querySelectorAll(".types span");
+let field = document.querySelectorAll(".principal");
+let content = document.querySelectorAll(".principal > div");
+let crs = document.querySelectorAll(".principal .courses .card-content");
+
+// let seeMore = document.querySelectorAll(".courses .box .info a");
+
+
+
+const getQueryParams = (params, url) => {
+  let href = url
+  //this expression is to get the query strings
+  let reg = new RegExp("[?&]" + params + "=([^&#]*)", "i")
+  let queryString = reg.exec(href)
+  return queryString ? queryString[1] : null
+}
+
+var selcted = getQueryParams("field", document.URL);
+if (selcted>=1 & selcted<=10){
+    selectField.options[selcted].selected = 'selected'
+    manageFields(selectField);
+}
+
 /*look for any elements with the class "custom-select":*/
 x = document.getElementsByClassName("custom-select");
 l = x.length;
@@ -107,10 +130,7 @@ document.addEventListener("click", closeAllSelect);
 
 // Start filtering
 
-let types = document.querySelectorAll(".types span");
-let field = document.querySelectorAll(".principal");
-let content = document.querySelectorAll(".principal > div");
-let crs = document.querySelectorAll(".principal .courses .card-content");
+
 types.forEach(type=>{
 	type.addEventListener("click",toggleActive);
 	type.addEventListener("click",manageContent);
